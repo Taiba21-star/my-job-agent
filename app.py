@@ -13,7 +13,7 @@ api_key = st.text_input("Enter Google Gemini API Key", type="password")
 # --- 2. THE LOGIC ---
 def find_jobs_with_gemini(cv_text):
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     
     prompt = f"""
     You are a professional Career Coach in Lahore. 
